@@ -19,6 +19,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -27,7 +28,7 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
-				<h2>LIST PRODUCT</h2>
+				<h2 data-aos="fade-left">LIST PRODUCT</h2>
 				<a href="AddProduct.php">Click to Add</a>
 					<table>
 						<thead>
@@ -81,6 +82,9 @@
 	<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
 </body>
 </html>
