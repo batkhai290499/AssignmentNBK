@@ -28,37 +28,36 @@
 			<div class="wrap-table100">
 				<div class="table100">
 					<table>
-					<ul>
-						<li class="table100-head">
-							<div class="column1">Name</div>
-							<div class="column2">Price</div>
-							<div class="column3">Content</div>
-							<div class="column4">Delete</div>
-							<div class="column5">Edit</div>
-							<div class="column6">Copy</div>
-						</li>
-						
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Date</th>
+								<th class="column2">Order ID</th>
+								<th class="column3">Name</th>
+								<th class="column4">Price</th>
+								<th class="column5">Quantity</th>
+								<th class="column6">Total</th>
+							</tr>
+						</thead>
 						<?php  
 						require_once './database.php';
 							foreach ($resultSet as $row) {
 								?>
-								<div class="column1"><?= $row['productname'] ?></div>
-								<div class="column2"><?= $row['price'] ?></div>
-								<div class="column3"><?= $row['content'] ?></div>
-								<div class="column4">
+								<th class="column1"><?= $row['productname'] ?></th>
+								<th class="column2"><?= $row['price'] ?></th>
+								<th class="column3"><?= $row['content'] ?></th>
+								<th class="column4">
 									<a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
-								</div>
+								</th>
 		
-								<div class="column5">
+								<th class="column5">
 									<a href="./editing.php?id=<?= $row['id'] ?>">Edit</a>
-								</div>
+								</th>
 		
-								<div class="column6">
+								<th class="column6">
 									<a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
-								</div>
+								</th>
 								<div class="clear-both"></div>  
 							<?php } ?>
-						</ul>	
 					</table>
 				</div>
 			</div>
