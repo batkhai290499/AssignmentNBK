@@ -8,9 +8,6 @@
 </head>
 <body>
 <?php
-echo something;
-?>
-<?php
     include "database.php";
         // $id = $_POST["txtId"];
         $id = $_POST["txtId"];
@@ -26,7 +23,7 @@ echo something;
 
         
 
-        $sql = "UPDATE product SET name = 'txtName' WHERE id = 'txtId'  ";
+        $sql = "UPDATE product SET name = 'txtName', price ='txtPrice', content = 'txtContent' WHERE id = 'txtId'  ";
         echo $sql;
         $stmt= $pdo->prepare($sql);
         $stmt->execute([$id, $name, $price, $content]);

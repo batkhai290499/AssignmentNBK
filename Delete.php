@@ -8,9 +8,6 @@
 </head>
 <body>
 <?php
-echo something;
-?>
-<?php
     include "database.php";
         // $id = $_POST["txtId"];
         $id = $_POST["txtId"];
@@ -26,7 +23,7 @@ echo something;
 
         
 
-        $sql = "DELETE FROM product WHERE id = $id ";
+        $sql = "DELETE FROM product WHERE id = txtId ";
         echo $sql;
         $stmt= $pdo->prepare($sql);
         $stmt->execute([$id, $name, $price, $content]);
