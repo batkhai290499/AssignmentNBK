@@ -23,7 +23,7 @@
 
         
 
-        $sql = "DELETE FROM product WHERE id = txtId ";
+        $sql = "DELETE FROM product WHERE id = " . $id;
         $stmt= $pdo->prepare($sql);
         $stmt->execute([$id, $name, $price, $content]);
     ?>
