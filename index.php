@@ -29,14 +29,14 @@
 				<div class="table100">
 					<table>
 					<ul>
-						<tr class="table100-head">
+						<li class="table100-head">
 							<div class="column1">Name</div>
 							<div class="column2">Price</div>
 							<div class="column3">Content</div>
 							<div class="column4">Delete</div>
 							<div class="column5">Edit</div>
 							<div class="column6">Copy</div>
-						</tr>
+						</li>
 						
 						<?php  
 						require_once './database.php';
