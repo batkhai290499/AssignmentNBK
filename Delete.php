@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-
+<?php
+echo something;
+?>
 <?php
     include "database.php";
         // $id = $_POST["txtId"];
