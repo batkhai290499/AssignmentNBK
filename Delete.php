@@ -10,10 +10,10 @@
 <?php
     include "database.php";
         // $id = $_POST["txtId"];
-        $id = $_GET["txtId"];
-        $name = $_GET["txtName"];
-        $price = $_GET["txtPrice"];
-        $content = $_GET["txtContent"];
+        $id = $_GET["id"];
+        // $name = $_GET["txtName"];
+        // $price = $_GET["txtPrice"];
+        // $content = $_GET["txtContent"];
 
         // $stsm = $pdo->prepare("INSERT INTO product(name, 
         // price, content) VALUES (?,?,?)");
