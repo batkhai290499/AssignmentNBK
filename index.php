@@ -28,7 +28,7 @@
 			<div class="wrap-table100">
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
-				<a href="AddProduct">Click to Add</a>
+				<a href="AddProduct.php">Click to Add</a>
 					<table>
 						<thead>
 							<tr class="table100-head">
