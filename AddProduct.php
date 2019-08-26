@@ -70,39 +70,36 @@
 			<div class="wrap-table100">
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
-				<button class="button" style="vertical-align:middle" href="AddProduct.php"><span>ADD </span></button>
-					<table>
-						<thead>
-							<tr class="table100-head">
-								<th class="column1">Date</th>
-								<th class="column2">Order ID</th>
-								<th class="column3">Name</th>
-								<th class="column4">Price</th>
-								<th class="column5">Quantity</th>
-								<th class="column6">Total</th>
-							</tr>
-						</thead>
-						<?php  
-						require_once './database.php';
-							foreach ($resultSet as $row) {
-								?>
-								<th class="column1"><?= $row['productname'] ?></th>
-								<th class="column2"><?= $row['price'] ?></th>
-								<th class="column3"><?= $row['content'] ?></th>
-								<th class="column4">
-									<a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
-								</th>
-		
-								<th class="column5">
-									<a href="./editing.php?id=<?= $row['id'] ?>">Edit</a>
-								</th>
-		
-								<th class="column6">
-									<a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
-								</th>
-								<div class="clear-both"></div>  
-							<?php } ?>
-					</table>
+				<button class="button" style="vertical-align:middle" href="Add.php"><span>ADD PRODUCT </span></button>
+                <form action="Add.php" method="post">
+        <table width="50%" border="0">
+            <tr>
+                <td>ID</td>
+                <td><input type="num" name ="txtId"></td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name ="txtName"></td>
+            </tr>
+
+            <tr>
+                <td>Price</td>
+                <td><input type="text" name ="txtPrice"></td>
+            </tr>
+
+            <tr>
+                <td>Content</td>
+                <td><input type="text" name ="txtContent"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Register"></td>
+            </tr>
+
+        </table>
+    </form>
 				</div>
 			</div>
 		</div>
