@@ -24,11 +24,8 @@
         
 
         $sql = "UPDATE product SET name = 'txtName', price ='txtPrice', content = 'txtContent' WHERE id = 'txtId'  ";
-        echo $sql;
         $stmt= $pdo->prepare($sql);
         $stmt->execute([$id, $name, $price, $content]);
-        
-        
     ?>
 
     "Your product has been added successfully"; 

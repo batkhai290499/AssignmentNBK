@@ -24,11 +24,8 @@
         
 
         $sql = "DELETE FROM product WHERE id = txtId ";
-        echo $sql;
         $stmt= $pdo->prepare($sql);
         $stmt->execute([$id, $name, $price, $content]);
-        
-        
     ?>
 
     "Your product has been added successfully"; 
