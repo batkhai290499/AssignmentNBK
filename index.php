@@ -29,7 +29,7 @@
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
 				<a href="AddProduct.php">Click to Add</a>
-					<table>
+					
 						<thead>
 							<tr class="table100-head">
 								<th class="column1">Date</th>
@@ -63,7 +63,7 @@
 							<?php } ?>
 						</tr>
 						
-					</table>
+					
 				</div>
 			</div>
 		</div>
