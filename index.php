@@ -54,7 +54,7 @@
 									</th>
 			
 									<th class="column5">
-										<a href="./EditProduct.php?id=<?= $row['id'] ?>">Edit</a>
+										<a href="EditProduct.php?id=<?= $row['id'] ?>">Edit</a>
 									</th>
 			
 									<th class="column6">
