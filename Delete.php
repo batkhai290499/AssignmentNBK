@@ -24,7 +24,8 @@
         $sql = "DELETE FROM product WHERE id = $id ";
         $stmt= $pdo->prepare($sql);
         $stmt->execute([$id, $name, $price, $content])
-
+        
+        echo $sql;
     ?>
 
     "Your product has been added successfully"; <button><a href="index.php">Back</a></button>
