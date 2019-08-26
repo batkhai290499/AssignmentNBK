@@ -29,8 +29,8 @@
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
 				<a href="AddProduct.php">Click to Add</a>
-					
-						<thead>
+					<table>
+						
 							<tr class="table100-head">
 								<th class="column1">Date</th>
 								<th class="column2">Order ID</th>
@@ -39,9 +39,8 @@
 								<th class="column5">Quantity</th>
 								<th class="column6">Total</th>
 							</tr>
-						</thead>
-						<tr>
-							<?php  
+						
+						<?php  
 						require_once './database.php';
 							foreach ($resultSet as $row) {
 								?>
@@ -61,9 +60,7 @@
 								</th>
 								<div class="clear-both"></div>  
 							<?php } ?>
-						</tr>
-						
-					
+					</table>
 				</div>
 			</div>
 		</div>
