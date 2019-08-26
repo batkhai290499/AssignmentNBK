@@ -50,7 +50,7 @@
 									<th class="column2"><?= $row['price'] ?></th>
 									<th class="column3"><?= $row['content'] ?></th>
 									<th class="column4">
-										<a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
+										<a href="Delete.php?id=<?= $row['id'] ?>">Delete</a>
 									</th>
 			
 									<th class="column5">
