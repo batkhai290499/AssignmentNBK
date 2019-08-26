@@ -45,7 +45,7 @@
 							foreach ($resultSet as $row) {
 								?>
 								<tr>
-									<th class="column1"><?= $row['productname'] ?></th>
+									<th class="column1"><?= $row['name'] ?></th>
 									<th class="column2"><?= $row['price'] ?></th>
 									<th class="column3"><?= $row['content'] ?></th>
 									<th class="column4">
