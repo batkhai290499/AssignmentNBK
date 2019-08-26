@@ -9,7 +9,6 @@
 <body>
 <?php
     include "database.php";
-    
         $id = $_POST["txtId"];
         $name = $_POST["txtName"];
         $price = $_POST["txtPrice"];
