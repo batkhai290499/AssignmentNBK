@@ -32,7 +32,7 @@
 					<table>
 						<thead>
 							<th class="table100-head">
-								<td class="column1">Nam
+								<td class="column1">Name</td> 
 								<td class="column3">Name</td>
 								<td class="column4">Price</td>
 								<td class="column5">Quantity</td>
