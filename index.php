@@ -69,7 +69,7 @@
 			<div class="wrap-table100">
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
-				<button class="button" style="vertical-align:middle"><span>Hover </span></button>
+				<button class="button" style="vertical-align:middle" href="./product_editing.php"><span>ADD PRODUCT </span></button>
 					<table>
 						<thead>
 							<tr class="table100-head">
