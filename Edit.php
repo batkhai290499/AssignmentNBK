@@ -23,7 +23,7 @@
 
         
 
-        $sql = "UPDATE product SET name = 'txtName', price ='txtPrice', content = 'txtContent' WHERE id = " . $id;
+        $sql = "UPDATE product SET name = '$name', price ='$price', content = '$content' WHERE id = " . $id;
         $stmt= $pdo->prepare($sql);
         $stmt->execute();
     ?>
