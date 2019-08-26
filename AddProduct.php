@@ -70,8 +70,8 @@
 			<div class="wrap-table100">
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
-				<button class="button" style="vertical-align:middle" href="Add.php"><span>ADD PRODUCT </span></button>
-                <form action="Add.php" method="post">
+				<a href="Add.php"></a>
+                        <form action="Add.php" method="post">
         <table width="50%" border="0">
             <tr>
                 <td>ID</td>
