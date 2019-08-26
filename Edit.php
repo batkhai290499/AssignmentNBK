@@ -25,7 +25,7 @@
 
         $sql = "UPDATE product SET name = 'txtName', price ='txtPrice', content = 'txtContent' WHERE id = 'txtId'  ";
         $stmt= $pdo->prepare($sql);
-        $stmt->execute([$id, $name, $price, $content]);
+        $stmt->execute();
     ?>
 
     "Your product has been added successfully"; 
