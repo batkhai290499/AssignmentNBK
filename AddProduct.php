@@ -70,36 +70,35 @@
 			<div class="wrap-table100">
 				<div class="table100">
 				<h2>LIST PRODUCT</h2>
-				<a href="Add.php"></a>
-                        <form action="Add.php" method="post">
-        <table width="50%" border="0">
-            <tr>
-                <td>ID</td>
-                <td><input type="num" name ="txtId"></td>
-            </tr>
+                    <form action="Add.php" method="post">
+                        <table width="50%" border="0">
+                            <tr>
+                                <td>ID</td>
+                                <td><input type="num" name ="txtId"></td>
+                            </tr>
 
-            <tr>
-                <td>Name</td>
-                <td><input type="text" name ="txtName"></td>
-            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td><input type="text" name ="txtName"></td>
+                            </tr>
 
-            <tr>
-                <td>Price</td>
-                <td><input type="text" name ="txtPrice"></td>
-            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td><input type="text" name ="txtPrice"></td>
+                            </tr>
 
-            <tr>
-                <td>Content</td>
-                <td><input type="text" name ="txtContent"></td>
-            </tr>
+                            <tr>
+                                <td>Content</td>
+                                <td><input type="text" name ="txtContent"></td>
+                            </tr>
 
-            <tr>
-                <td></td>
-                <td><input type="submit" name="Register"></td>
-            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" name="Register"></td>
+                            </tr>
 
-        </table>
-    </form>
+                        </table>
+                    </form>
 				</div>
 			</div>
 		</div>
