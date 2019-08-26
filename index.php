@@ -28,16 +28,16 @@
 			<div class="wrap-table100">
 				<div class="table100">
 					<table>
-						<thead>
-							<tr class="table100-head">
-								<th class="column1">Date</th>
-								<th class="column2">Order ID</th>
-								<th class="column3">Name</th>
-								<th class="column4">Price</th>
-								<th class="column5">Quantity</th>
-								<th class="column6">Total</th>
-							</tr>
-						</thead>
+					<ul>
+						<tr class="table100-head">
+							<div class="column1">Name</div>
+							<div class="column2">Price</div>
+							<div class="column3">Content</div>
+							<div class="column4">Delete</div>
+							<div class="column5">Edit</div>
+							<div class="column6">Copy</div>
+						</tr>
+						
 						<?php  
 						require_once './database.php';
 							foreach ($resultSet as $row) {
@@ -58,6 +58,7 @@
 								</div>
 								<div class="clear-both"></div>  
 							<?php } ?>
+						</ul>	
 					</table>
 				</div>
 			</div>
