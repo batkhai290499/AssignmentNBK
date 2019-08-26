@@ -32,32 +32,32 @@
 					<table>
 						<thead>
 							<tr class="table100-head">
-								<th class="column1">Date</th>
-								<th class="column2">Order ID</th>
-								<th class="column3">Name</th>
-								<th class="column4">Price</th>
-								<th class="column5">Quantity</th>
-								<th class="column6">Total</th>
+								<td class="column1">Date</td>
+								<td class="column2">Order ID</td>
+								<td class="column3">Name</td>
+								<td class="column4">Price</td>
+								<td class="column5">Quantity</td>
+								<td class="column6">Total</td>
 							</tr>
 						</thead>
 						<?php  
 						require_once './database.php';
 							foreach ($resultSet as $row) {
 								?>
-								<th class="column1"><?= $row['productname'] ?></th>
-								<th class="column2"><?= $row['price'] ?></th>
-								<th class="column3"><?= $row['content'] ?></th>
-								<th class="column4">
+								<td class="column1"><?= $row['productname'] ?></td>
+								<td class="column2"><?= $row['price'] ?></td>
+								<td class="column3"><?= $row['content'] ?></td>
+								<td class="column4">
 									<a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
-								</th>
+								</td>
 		
-								<th class="column5">
+								<td class="column5">
 									<a href="./editing.php?id=<?= $row['id'] ?>">Edit</a>
-								</th>
+								</td>
 		
-								<th class="column6">
+								<td class="column6">
 									<a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
-								</th>
+								</td>
 								<div class="clear-both"></div>  
 							<?php } ?>
 					</table>
