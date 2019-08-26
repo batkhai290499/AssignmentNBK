@@ -30,7 +30,7 @@
 				<h2>LIST PRODUCT</h2>
 				<a href="AddProduct.php">Click to Add</a>
 					<table>
-						
+						<thead>
 							<tr class="table100-head">
 								<th class="column1">Date</th>
 								<th class="column2">Order ID</th>
@@ -39,26 +39,29 @@
 								<th class="column5">Quantity</th>
 								<th class="column6">Total</th>
 							</tr>
-						
+						</thead>
 						<?php  
 						require_once './database.php';
 							foreach ($resultSet as $row) {
 								?>
-								<th class="column1"><?= $row['productname'] ?></th>
-								<th class="column2"><?= $row['price'] ?></th>
-								<th class="column3"><?= $row['content'] ?></th>
-								<th class="column4">
-									<a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
-								</th>
-		
-								<th class="column5">
-									<a href="./editing.php?id=<?= $row['id'] ?>">Edit</a>
-								</th>
-		
-								<th class="column6">
-									<a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
-								</th>
-								<div class="clear-both"></div>  
+								<tr>
+									<th class="column1"><?= $row['productname'] ?></th>
+									<th class="column2"><?= $row['price'] ?></th>
+									<th class="column3"><?= $row['content'] ?></th>
+									<th class="column4">
+										<a href="./product_delete.php?id=<?= $row['id'] ?>">Delete</a>
+									</th>
+			
+									<th class="column5">
+										<a href="./editing.php?id=<?= $row['id'] ?>">Edit</a>
+									</th>
+			
+									<th class="column6">
+										<a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy">Copy</a>
+									</th>
+									<div class="clear-both"></div>  
+								</tr>
+								
 							<?php } ?>
 					</table>
 				</div>
