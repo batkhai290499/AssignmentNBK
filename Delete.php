@@ -21,7 +21,7 @@
         // $stsm->execute();
         // $stsm->close();  
 
-        $sql = "DELETE FROM product WHERE id = $id ";
+        $sql = "DELETE FROM product WHERE id = txtId ";
         $stmt= $pdo->prepare($sql);
         $stmt->execute([$id, $name, $price, $content])
 
