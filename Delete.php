@@ -9,19 +9,7 @@
 <body>
 <?php
     include "database.php";
-        // $id = $_POST["txtId"];
         $id = $_GET["id"];
-        // $name = $_GET["txtName"];
-        // $price = $_GET["txtPrice"];
-        // $content = $_GET["txtContent"];
-
-        // $stsm = $pdo->prepare("INSERT INTO product(name, 
-        // price, content) VALUES (?,?,?)");
-        // $stsm->bind_param("sss", $name, $price, $content);
-        // $stsm->execute();
-        // $stsm->close();  
-
-        
 
         $sql = "DELETE FROM product WHERE id = " . $id;
         echo $sql;
